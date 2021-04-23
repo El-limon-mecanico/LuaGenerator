@@ -153,7 +153,6 @@ function GenerateFile(){
         luaCont+=selector.value+"={\n";
         components.push("\""+selector.value+"\"");
         luaCont+=FillLua(selector);
-        if(index<componentsCant-1) luaCont+=",";
         luaCont+="\n";
     }
     }
@@ -163,7 +162,7 @@ function GenerateFile(){
         componentsText+=components[index];
         if(index<components.length-1) componentsText+=", ";
     }
-    componentsText+="},\n";
+    componentsText+="}\n";
     luaCont=componentsText+luaCont;
     console.log(luaCont);
     download(document.getElementById("fileName").value+".lua",luaCont);
