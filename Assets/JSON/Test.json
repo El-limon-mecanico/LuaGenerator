@@ -1,0 +1,17 @@
+{
+    "damage":{
+        "type":"number",
+        "default":0,
+        "description":"Cantidad de daño que realizaran los ataques"
+    },
+    "range":{
+        "type":"bool",
+        "default":false,
+        "description":"distancia de ataque"
+    },
+    "SwordComponent":{},
+    "testo":{
+        "type":"text",
+        "default":"testeo"
+    }
+}
